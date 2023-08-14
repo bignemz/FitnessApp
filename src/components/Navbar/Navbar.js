@@ -1,15 +1,18 @@
 import React from 'react'
 import "./Navbar.scss"
+import { Link } from 'react-router-dom'
+
 
 function Navbar() {
   return (
     <nav className="navbar">
-        <h1>BODY MAX</h1>
-        <ul className="nav-links">
-        <li><a>Home</a></li>
-        <li><a>Price</a></li>
-        <li><a>Join us</a></li>
-        </ul>
+        <h1>ALPHA</h1>
+        <div className="nav-links">
+        <Link className='link' to='/'>Home</Link>
+        <Link className='link' to='Pricepage'>Price</Link>
+        <Link className='link' to='Joinpage'>Join</Link>
+
+        </div>
     </nav>
   )
 }

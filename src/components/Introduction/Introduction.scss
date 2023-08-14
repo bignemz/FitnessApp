@@ -1,0 +1,27 @@
+.Intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    background-color: blue/* Just for visualization */
+ 
+}
+
+.Intro-text{
+    font-size: 40px;
+    
+    span{
+        h1{
+            color:  rgb(171,32,253);
+
+        }
+
+    }
+}
+
+.Intro-photo{
+    width: 10px;
+    height: 10px;
+   
+  
+}
