@@ -1,14 +1,18 @@
 .Intro{
-    display: flex;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+   
     justify-content: center;
-    align-items: center;
+   
     height: 100vh; /* Adjust as needed */
     background-color: blue/* Just for visualization */
  
 }
 
 .Intro-text{
-    font-size: 40px;
+
     
     span{
         h1{
@@ -20,8 +24,8 @@
 }
 
 .Intro-photo{
-    width: 10px;
-    height: 10px;
+   
+    background-color: aqua;
    
   
 }
