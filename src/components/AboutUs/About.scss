@@ -1,0 +1,49 @@
+
+.About-section{
+    text-align: center;
+    margin-top: 50px;
+    h1{
+        color: rgb(171,32,253) ;
+    }
+}
+
+.About{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+
+    justify-content: center;
+
+
+    .About-text{
+       
+        position: relative;
+
+        
+
+
+        span{
+        
+        color: rgb(171,32,253) ;
+        }
+        .About-text-child{
+            border:   2px solid rgb(171,32,253) ;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            border-radius:10px;
+        }
+    }
+    .About-img{
+        img{
+            width: 500px;
+            height: 600px;
+            border-radius: 25% 40%;
+        }  
+    }
+}
