@@ -1,9 +1,13 @@
 import React from 'react'
+import Bmi from '../../components/Bmi/Bmi'
+import Price from '../../components/Price/Price'
 
 function Pricepage() {
   return (
     <div>
-    <h1>boy</h1>
+        <Bmi/>
+        <Price/>
+   
     </div>
   )
 }
