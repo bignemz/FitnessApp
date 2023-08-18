@@ -2,14 +2,17 @@
     
     justify-content: center;
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-     border: 1px solid #ccc;
+   
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
 
-      
+      h1 {
+          color: rgba(171, 32, 253);
+          font-size: 40px;
+        }
       
        h2 {
         margin-top: 0;
@@ -34,12 +37,12 @@
       
          button {
         padding: 10px;
-        background-color:rgba(171,32,253);
-        color: black;
+        background-color:black;
+        color:white;
         border: none;
         border-radius: 3px;
         cursor: pointer;
-        width: 70px;
+        width: 150px;
       }
       
       .contact-form-container button:hover {

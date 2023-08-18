@@ -3,7 +3,7 @@ import './Price.scss'
 
 function Price() {
   return (
-    <div>  
+    <div className='product-plan'>  
       <h1>Our Plans</h1> 
        <div className="product-list">     
     <div className="product Silver">

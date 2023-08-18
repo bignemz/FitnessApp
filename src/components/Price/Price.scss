@@ -1,3 +1,13 @@
+.product-plan{
+    align-items: center;
+    text-align: center;
+    h1{
+      color: rgb(171, 32, 253);
+      font-size: 40px;
+    }
+
+}
+
 .product-list {
   display: grid;
   width: 100%;
@@ -8,10 +18,16 @@
   
   .product {
     box-shadow: 0 0 5px rgba(171,32,253, 0.5);
-    background-color: aqua;
+    
     width:100%;
     text-align: center;
     padding: 10px;
+    border-radius: 60px;
+        img {
+            max-width: 100%;
+            height: 60%;
+            border-radius: 20px;
+          }  
 
   }
   .Gold{
@@ -34,7 +50,7 @@
   
   }
   
-  .product img {
+    img {
     max-width: 100%;
     height: 60%;
   }
@@ -47,8 +63,15 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    
+
   }
   
   .add-to-cart:hover {
-    background-color: rgb(171,32,253);
+    background-color: rgb(71, 26, 97);
+    color: aliceblue;
   }
