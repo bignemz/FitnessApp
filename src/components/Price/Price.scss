@@ -1,24 +1,48 @@
 .product-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  gap: 30px; /* Gap between items */
+  align-items: center;
   }
   
   .product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
+    box-shadow: 0 0 5px rgba(171,32,253, 0.5);
+    background-color: aqua;
+    width:100%;
     text-align: center;
+    padding: 10px;
+
+  }
+  .Gold{
+    h2{
+      color: rgb(218,165,32);
+     }
+
+  }
+  .Silver{
+
+   h2{
+    color: rgb(192,192,192);
+   }
+  }
+  .Plantinum{
+    h2{
+      color:   rgb(229, 228, 226);
+     }
+    
+  
   }
   
   .product img {
     max-width: 100%;
+    height: 60%;
   }
   
   .add-to-cart {
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(171,32,253);
+    color:black;
+    border: 3px solid red;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -26,5 +50,5 @@
   }
   
   .add-to-cart:hover {
-    background-color: #0056b3;
+    background-color: rgb(171,32,253);
   }

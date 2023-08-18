@@ -11,6 +11,7 @@ function Layoutpage() {
        <Navbar/>
        <Outlet/>
        <Footer/>
+      
 
     </div>
   )

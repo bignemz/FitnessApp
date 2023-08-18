@@ -1,4 +1,5 @@
 import  {useState}from 'react'
+import './Bmi.scss'
 
 function Bmi() {
 
@@ -26,7 +27,7 @@ function Bmi() {
         }
       }
   return (
-    <div>
+    <div className='Bmi'>
     <h1>BMI Calculator</h1>
     <div>
       <label>Weight (kg):</label>
@@ -36,7 +37,7 @@ function Bmi() {
       <label>Height (cm):</label>
       <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
     </div>
-    <button onClick={calculateBMI}>Calculate BMI</button>
+    <button onClick={calculateBMI} className='Bmi-btn'>Calculate BMI</button>
     {bmi !== null && (
       <div>
         <h2>Your BMI: {bmi}</h2>

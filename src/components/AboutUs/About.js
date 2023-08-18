@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.scss"
-import Bmi from '../Bmi/Bmi'
+
 
 function About() {
   return (
@@ -21,7 +21,7 @@ function About() {
        </div>
        </div>
 
-       <Bmi/>
+    
       
     
     </div>
