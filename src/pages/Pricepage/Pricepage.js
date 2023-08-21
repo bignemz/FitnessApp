@@ -7,7 +7,16 @@ import './Pricepage.scss'
 function Pricepage() {
   return (
     <div className='Price'>
-        <Bmi/>
+        <div className='Intro'>
+      <div className='Intro-text'>
+       
+         <div className='Intro-text1'>
+           <Bmi/>
+        </div>
+         </div>
+      
+      <div className='Intro-photo'> <img src="./assest/gym11.jpg" alt=""/></div>
+    </div>
         <Price/>
    
     </div>

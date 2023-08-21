@@ -15,23 +15,50 @@
 }
 
 .Intro-text {
-    width: 100px;
-    height: 100px;
+ 
     display: grid;
+ 
     place-items: center;
     text-align: center;
+    justify-content: center;
     /* Horizontally center */
     height: 100vh;
     background-color: black;
     .Intro-text1{
+        display: inline;
         background-color: black;
+        margin: 0 auto;
+      
+     
     }
+    button{
+        background-color: rgb(171,32,253);
+        color:black;
+        border: 3px solid red;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        
+
+    }
+    button:hover {
+        background-color: rgb(71, 26, 97);
+        color: aliceblue;
+      }
 
 
 
     h1 {
-        font-size: 40px;
-        margin-left: 80px;
+        font-size: 60px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+       
         color:white
 
 
@@ -54,6 +81,8 @@
     img {
         width:100VW;
         height: 100VH;
+        border-radius: 10px;
+
        
        
         

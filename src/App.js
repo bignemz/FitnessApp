@@ -5,10 +5,10 @@ import Layoutpage from './pages/Layoutpage/Layoutpage';
 import Homepage from './pages/Homepage/Homepage';
 import Pricepage from './pages/Pricepage/Pricepage';
 import Joinpage from './pages/Joinpage/Joinpage';
-
+import './server'
 function App() {
   return (
-    // <div><Layoutpage/></div>
+
     
 
     <BrowserRouter>

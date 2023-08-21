@@ -3,8 +3,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color:white;
-    color: white;
+
     padding: 16px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid rgba(192, 19, 140, 0.3);
+    box-shadow: 0px 4px 10px rgba(231, 9, 183, 0.1);
 
     h1{
         color:  rgb(171,32,253);
@@ -17,11 +21,12 @@ nav {
     display: flex;
     gap: 70px;
     font-size: 20px;
+   
 
 
 .link{
     text-decoration: none;
-    color:black;
+    color:white;
     font-weight: bold;
     transition: color 0.3s;
 
@@ -32,4 +37,15 @@ nav {
 
 .link:hover {
     color:rgb(171,32,253);
+}
+
+.cart{
+    border: 3px solid rgb(171,32,253);
+    color: rgb(171,32,253);
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
 }
