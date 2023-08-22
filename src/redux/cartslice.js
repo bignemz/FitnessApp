@@ -1,18 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 
+const initialState={
+  cart:[],
+}
 
+export const cartSlice = createSlice({
 
-const cartSlice= createSlice({
+    name:"carts", 
 
-    name:"cart", 
-
-    initialstate:{
-        cart:[]
-    },
-    reducer:{
+    initialState,
+    reducers:{
          
         addtoCart:(state,action)=>{
+    
             const itemInCart = state.cart.find((item) => item.id === action.payload.id);
 
             if (itemInCart) {
@@ -23,6 +24,7 @@ const cartSlice= createSlice({
                 })
             }
         },
+        
         incrementQuantity: (state, action) => {
             const item = state.cart.find((item) => item.id === action.payload);
             item.quantity++;
@@ -44,7 +46,7 @@ const cartSlice= createSlice({
     },
 })
 
-export const cartReducer = cartSlice.reducer;
+export  default cartSlice.reducer
 export const {
     addtoCart,
     incrementQuantity,

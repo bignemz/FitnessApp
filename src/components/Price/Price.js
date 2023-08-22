@@ -1,14 +1,24 @@
 import React, { useState , useEffect } from 'react'
 import './Price.scss'
-import { useDispatch } from 'react-redux'
-import { addToCart } from '../../redux/cartslice'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
+
 import Priceitem from './Priceitem'
 
 
 function Price() {
 
   const [Cart, setCart]= useState([])
+  const cart = useSelector((state) => state.cart)
 
+  const getTotal = () => {
+    let totalQuantity = 0
+    let totalPrice = 0
+    cart.forEach(item => {
+      totalQuantity += item.quantity
+      totalPrice += item.price * item.quantity
+    })
+    return {totalPrice, totalQuantity}
+  }
   React.useEffect(()=>{
     fetch("/api/carts").then(res=>res.json()).then(data=> setCart(data.carts))
   },[])
@@ -22,7 +32,7 @@ function Price() {
     name={cart.name}
     price={cart.price} 
     plan={cart.plan} 
-    quantity={cart.quantity} />)
+    quantity={cart.quantity}/>)
 
 
   return (
@@ -33,7 +43,13 @@ function Price() {
       {CartElement}
     
       </div>
-     
+     <div className='Total'>
+     <p className="total_p">
+      Total ({getTotal().totalQuantity} items) 
+       : <strong>${getTotal().totalPrice}</strong>
+      </p>
+      <button className='button'>Check out</button>
+     </div>
      
     </div>
 

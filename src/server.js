@@ -8,8 +8,8 @@ createServer({
 
     seeds(server) {
         server.create("cart", { id: "1", name: "Underweight",plan:"Silver", price: 19.99, imageUrl: "./assest/gym1.jpg"})
-        server.create("cart", { id: "2", name: "NormalWeight",plan:"Gold", price: 24.99, imageUrl: "./assest/gym1.jpg"})
-        server.create("cart", { id: "3", name: "Overweight",plan:"Plantinum", price: 14.99, imageUrl: "./assest/gym1.jpg"})
+        server.create("cart", { id: "2", name: "NormalWeight",plan:"Gold", price: 24.99, imageUrl: "./assest/gym10.jpg"})
+        server.create("cart", { id: "3", name: "Overweight",plan:"Plantinum", price: 14.99, imageUrl: "./assest/gym7.jpg"})
  
     },
 
