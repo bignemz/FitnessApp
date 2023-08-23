@@ -12,8 +12,11 @@ function About() {
       <div className='About-text'>
       <div className='About-text-child'>
             <h2>Meet our head coach <span>Emily</span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellendus ullam fugit porro dicta eos. Libero magni ab sint consequatur?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellendus ullam fugit porro dicta eos. Libero magni ab sint consequatur?
+            <p>Hello and a hearty welcome to all health enthusiasts and seekers of vitality! I'm immensely delighted to virtually meet you through this platform, as we embark on a journey of holistic wellness and personal transformation.
+
+
+
+
             </p>
         </div>
       </div>

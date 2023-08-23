@@ -2,13 +2,17 @@ import React from 'react'
 import Join from '../../components/JoinUs/Join'
 import Contact from '../../components/ContactUs/Contact'
 import "./joinpage.scss"
+import { Outlet} from 'react-router-dom';
 
 function Joinpage() {
   return (
     <div className='Join-section'>
-        <div><img src="./assest/gym8.png" alt=""/>
+        <div> 
+           <Outlet/>
         </div>
-        <div><Join/></div>
+        <div>
+          <Join/>  
+        </div>
 
     </div>
   )
