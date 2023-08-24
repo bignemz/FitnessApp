@@ -7,13 +7,13 @@ function Footer() {
        <footer className="footer">
       <div className="social-icons">
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/instagram-icon.png" alt="Instagram" />
+        <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/facebook-icon.png" alt="Facebook" />
+        <i class="fa-brands fa-facebook"></i>
         </a>
         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/twitter-icon.png" alt="Twitter" />
+        <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
       <p>&copy; 2023 Alpha. All rights reserved.</p>
