@@ -15,7 +15,7 @@ function Priceitem({id, image, name, price,plan, quantity=0}) {
   const control= useAnimation()
  const[ref,inView]=useInView()
 
- useEffect(()=>{
+  useEffect(()=>{
 
   if (inView) {
     control.start("visible")
