@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react'
+import React, { useState } from 'react'
 import './Price.scss'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 

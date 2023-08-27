@@ -1,6 +1,6 @@
 import React from 'react'
 import './Join.scss'
-import { Link } from 'react-router-dom'
+
 
 function Join() {
   return (
