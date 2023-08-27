@@ -48,3 +48,121 @@
         }  
     }
 }
+
+@media (max-width: 768px) {
+    .About-section{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow values and color as needed */
+        margin-bottom: 10px;
+        h1{
+            color: rgb(171,32,253) ;
+        }
+    }
+    
+    .About{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 auto;
+        margin-top: 50px;
+        justify-content: center;
+    
+    
+        .About-text{
+           
+            position: relative;
+    
+            
+    
+    
+            span{
+            
+            color: rgb(171,32,253) ;
+            }
+            .About-text-child{
+                border:   2px solid rgb(171,32,253) ;
+                position: absolute;
+                top: 45%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                border-radius:10px;
+            }
+        }
+        .About-img{
+            img{
+                width: 500px;
+                height: 600px;
+                border-radius: 25% 40%;
+            }  
+        }
+    }
+
+
+  
+}
+
+@media (max-width: 480px) {
+
+    .About-section{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow values and color as needed */
+        margin-bottom: 10px;
+        h1{
+            color: rgb(171,32,253) ;
+        }
+    }
+    
+    .About{
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+       
+        margin: 0 auto;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    
+    
+        .About-text{
+           display: flex;
+           width: 100vw;
+           position: relative;
+       
+    
+            
+    
+    
+            span{
+            
+            color: rgb(171,32,253) ;
+            }
+            .About-text-child{
+                border:   2px solid rgb(171,32,253) ;
+                padding: 10px;
+    
+                position: relative;
+                top: 0;
+                left:0;
+                transform: translate(0, 0);
+                border-radius:10px;
+              
+            }
+        }
+        .About-img{
+            img{
+                width: 80vw;
+                height: 400px;
+                border-radius: 25% 40%;
+
+            }  
+        }
+    }
+
+  
+}
+

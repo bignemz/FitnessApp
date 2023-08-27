@@ -1,20 +1,46 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Join from '../../components/JoinUs/Join'
 import Contact from '../../components/ContactUs/Contact'
 import "./joinpage.scss"
-import { Outlet} from 'react-router-dom';
+import {motion, useAnimation} from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
 
 function Joinpage() {
+
+  const boxVariant={
+    visible:{ opacity:1, scale:1,transition:{duration: 0.5} },
+    hidden:{ opacity:1, scale:0 }
+  }
+
+  const control= useAnimation()
+ const[ref,inView]=useInView()
+
+ useEffect(()=>{
+
+  if (inView) {
+    control.start("visible")
+  }
+  else{
+    control.start("hidden")
+  }
+ },[control,inView])
   return (
-    <div className='Join-section'>
+    <motion.div 
+    ref={ref}
+    variants={boxVariant}
+    animate={control}
+    
+    className='Join-section'>
         <div> 
-           <Outlet/>
+           
+        <Join/> 
         </div>
         <div>
-          <Join/>  
+        <Contact/> 
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

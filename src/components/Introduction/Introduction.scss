@@ -13,6 +13,10 @@
 
 
 }
+img {
+    max-width: 100%;
+   
+  }
 
 .Intro-text {
  
@@ -88,3 +92,208 @@
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .Intro {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      
+       
+        margin: 0 auto;
+        background-color: black;
+    
+        justify-content: center;
+    
+        height: 100vh;
+        /* Adjust as needed */
+    
+    
+    }
+    
+    .Intro-text {
+     
+        display: grid;
+     
+        place-items: center;
+        text-align: center;
+        justify-content: center;
+        /* Horizontally center */
+        height: 100vh;
+        background-color: black;
+        .Intro-text1{
+            display: inline;
+            background-color: black;
+            margin: 0 auto;
+          
+         
+        }
+        button{
+            background-color: rgb(171,32,253);
+            color:black;
+            border: 3px solid red;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
+         
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+    
+        }
+        button:hover {
+            background-color: rgb(71, 26, 97);
+            color: aliceblue;
+          }
+    
+    
+    
+        h1 {
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:white
+    
+    
+    
+        }
+    
+        span {
+            h1 {
+                color: rgb(171, 32, 253);
+                margin-top: 10px;
+    
+            }
+    
+        }
+    }
+    
+    .Intro-photo {
+    
+    
+        img {
+            width:100VW;
+            height: 45VH;
+            border-radius: 10px;
+    
+           
+           
+            
+        }
+    
+    }
+
+
+
+
+  
+}
+
+@media (max-width: 480px) {
+
+
+    .Intro {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      
+       
+        margin: 0 auto;
+        background-color: black;
+    
+        justify-content: center;
+    
+        height: 100vh;
+        /* Adjust as needed */
+    
+    
+    }
+    
+    .Intro-text {
+     
+        display: grid;
+     
+        place-items: center;
+        text-align: center;
+        justify-content: center;
+        /* Horizontally center */
+        height: 100vh;
+        background-color: black;
+        .Intro-text1{
+            display: inline;
+            background-color: black;
+            margin: 0 auto;
+          
+         
+        }
+        button{
+            background-color: rgb(171,32,253);
+            color:black;
+            border: 3px solid red;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
+         
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+    
+        }
+        button:hover {
+            background-color: rgb(71, 26, 97);
+            color: aliceblue;
+          }
+    
+    
+    
+        h1 {
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:white
+    
+    
+    
+        }
+    
+        span {
+            h1 {
+                color: rgb(171, 32, 253);
+                margin-top: 10px;
+    
+            }
+    
+        }
+    }
+    
+    .Intro-photo {
+    
+    
+        img {
+            width:100VW;
+            height: 45VH;
+            border-radius: 10px;
+    
+           
+           
+            
+        }
+    
+    }
+
+
+
+
+  
+}
+
+
+
+  

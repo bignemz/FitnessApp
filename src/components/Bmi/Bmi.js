@@ -1,7 +1,12 @@
 import  {useState}from 'react'
 import './Bmi.scss'
+import {motion} from 'framer-motion'
 
 function Bmi() {
+  const boxVariant={
+    visible:{ opacity:1, scale:1,transition:{duration: 0.5} },
+    hidden:{ opacity:1, scale:0 }
+  }
 
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
@@ -39,10 +44,15 @@ function Bmi() {
     </div>
     <button onClick={calculateBMI} className='Bmi-btn'>Calculate BMI</button>
     {bmi !== null && (
-      <div>
+      <motion.div
+      variants={boxVariant}
+      animate="visible"
+      initial="hidden"
+      
+      >
         <h2>Your BMI: {bmi}</h2>
         <p>Interpretation: {interpretBMI(bmi)}</p>
-      </div>
+      </motion.div>
     )}
   </div>
    

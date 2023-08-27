@@ -7,8 +7,10 @@ function Join() {
     <div className='join-text'>
         <h1>Join Us </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore nostrum earum nisi corporis. Ipsam architecto, adipisci praesentium eaque perspiciatis</p>
+
         
-      <Link className='link' to='Contact'><button className='Join-btn'>contact</button></Link>
+        
+     
     </div>
   )
 }

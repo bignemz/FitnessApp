@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef }from 'react'
 import "./Navbar.scss"
 import { Link } from 'react-router-dom'
 import {useSelector} from 'react-redux'
@@ -6,6 +6,15 @@ import {useSelector} from 'react-redux'
 
 function Navbar() {
   const cart = useSelector((state) => state.cart)
+
+  const navRef=useRef()
+
+  function showNavbar(){
+    navRef.current.classList.toggle("reponsive")
+  }
+  function removeNavbar(){
+    navRef.current.classList.remove("reponsive")
+  }
 
 
   const getTotalQuantity = () => {
@@ -17,15 +26,23 @@ function Navbar() {
   }
   console.log(getTotalQuantity())
   return (
-    <nav className="navbar">
+    <nav  className="navbar">
         <h1>ALPHA</h1>
-        <div className="nav-links">
-        <Link className='link' to='/'>Home</Link>
-        <Link className='link' to='Pricepage'>Price</Link>
-        <Link className='link' to='Joinpage'>Join</Link>
-        <Link className='cart' to=''>Cartitems:{getTotalQuantity()}</Link>
+        <div ref={navRef} className="nav-links">
+        <button className=' btn nav-close ' onClick={showNavbar}><i class="fa-solid fa-x"></i></button>
+        <Link onClick={removeNavbar} className='link' to='/'>Home</Link>
+        <Link onClick={removeNavbar}  className='link' to='Pricepage'>Price</Link>
+        <Link   onClick={removeNavbar} className='link' to='Joinpage'>Join</Link>
+        
 
         </div>
+       <div className='addto'> 
+       <Link className='cart' to=''>Cartitems:{getTotalQuantity()}</Link>
+        <button className='nav-open btn' onClick={showNavbar}><i class="fa-solid fa-bars "></i></button>
+       
+       </div>
+
+  
     </nav>
   )
 }

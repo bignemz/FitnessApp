@@ -18,13 +18,10 @@ function App() {
           <Route path='/' element={<Layoutpage/>}>
             <Route path='/' element={<Homepage/>}/>
             <Route path='Pricepage' element={<Pricepage/>}/>
-            <Route path='Joinpage' element={<Joinpage/>}>
-                <Route index  element={<Image/>}/>
-                  <Route path='Contact' element={<Contact/>}/>
+            <Route path='Joinpage' element={<Joinpage/>}/>
+                
 
-              
-
-               </Route>
+            
           </Route>
     </Routes>
     </BrowserRouter>
