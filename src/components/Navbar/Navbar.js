@@ -38,7 +38,7 @@ function Navbar() {
         </div>
        <div className='addto'> 
        <Link className='cart' to=''>Cartitems:{getTotalQuantity()}</Link>
-        <button className='nav-open btn' onClick={showNavbar}><i class="fa-solid fa-bars "></i></button>
+        <button className='nav-open btn' onClick={showNavbar}><i class="fa-solid fa-bars fa-2x " ></i></button>
        
        </div>
 
