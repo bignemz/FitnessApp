@@ -12,8 +12,8 @@
     grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
     gap: 30px; /* Gap between items */
     align-items: center;
-    margin-top: 100px;
-    margin-bottom:50px ;
+    margin-top: 10px;
+    margin-bottom:30px ;
     
     }
 
@@ -107,6 +107,8 @@
   .product-plan{
     align-items: center;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
     h1{
       color: rgb(171, 32, 253);
       font-size: 40px;
